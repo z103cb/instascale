@@ -33,16 +33,7 @@ Key features:
 - Note that the other contents of the Makefile (as well as the `config` and `bin` dirs) exist for future operator development, and are not currently utilized
 ## Deployment
 - Deploy MCAD using steps [here](https://github.com/project-codeflare/multi-cluster-app-dispatcher/blob/main/doc/deploy/deployment.md).
-- Deploy InstaScale using commands below:
-```
-git clone https://github.com/project-codeflare/instascale.git
-cd deployment/
-oc apply -f instascale-configmap.yaml
-oc apply -f instascale-sa.yaml
-oc apply -f instascale-clusterrole.yaml
-oc apply -f instascale-clusterrolebinding.yaml
-oc apply -f deployment.yaml
-```
+- Deploy InstaScale using: `make deploy`
 
 ## Testing
 
